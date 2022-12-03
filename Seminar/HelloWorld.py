@@ -140,3 +140,99 @@
 # встречается в слове
 
 
+# ======================================================================================================
+
+#  Семинар 3. 
+
+# Зад 1. Задайте список. Напишите прогр, к-я определит присутствует ли в данном списке строк некоторое число
+# Пример: ['Hello', 'dfhdas', '12', 'uran3']; 2 -> Da, 1 -> Da
+
+# 1)
+
+# a = ["Hello", "dfhdas", "12", "uran3"]
+# n = input('Input n: ')
+# for i in a:
+#     if n in i:
+#         print('Da')
+#     else:
+#         print('No')
+
+# 2)
+
+# s = input().split()
+# n = input('Input n: ')
+# flag = False
+# for i in range(len(s)):
+    # if s[i].find(n) > -1:         # find вернет -1 если не найдет строку
+#         flag = True
+# if flag:
+#     print('Da')
+# else:
+#     print('No')
+
+# 3)
+
+# s = [input() for i in range(5)]
+# n = input('Input n: ')
+# n = True
+# for i in s:
+#     if n in i:
+#         print('Da')
+#         n = False
+#         break
+# if n:
+#     print('number is not found')
+
+# ------------------------------------------------------------------------------------------------
+
+# Зад 2. Прогр, к-я определит позицию второго вхождения строки в списке либо сообщит, что ее нет 
+# Пример: ['qwe', 'asd', 'zxc', 'qwe'], ищем 'qwe', ответ: 3
+
+# 1)
+
+# s = ['qwe', 'asd', 'zxc', 'qwe']
+# n = input('Input a string: ')
+# count = 0
+# for i in range(len(s)):
+#     if s[i] == n and count == 1:
+#         print(i)
+#     if s[i] == n and count == 0:
+#         count += 1
+
+# 2)
+
+# s = ['qwe', 'asd', 'zxc', 'qwe']
+# n = input('Input a string: ')
+# if s.count(n) < 2:
+#     print("There is not second entering")
+# else:
+#     s.remove(n)                                  # удаляет первое вхождение
+#     print(s.index(n) + 1)
+
+# -------------------------------------------------------------------------------------------------------
+
+# Зад 3. Реализуйте алгоритм задания случайных чисел без использования встроенного генератора
+#  псевдослучайных чисел
+
+# import time
+
+# def get_rand(x, y):
+#     scope = y - x
+#     print(time.time())
+#     result = int(time.time())%scope
+#     return result + x
+
+# print(get_rand(80, 100))
+
+# =====================================================================================================
+
+
+
+
+
+
+
+
+
+
+
