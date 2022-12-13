@@ -349,6 +349,88 @@
 
 # =====================================================================================================
 
+#    Семинар 6
+
+# Зад 1. Напишите прогр вычисления арифметического выражения заданного строкой. Используйте операции +,-,/,*. 
+# приоритет операций стандартный.
+# Пример: 2+2 => 4;  1+2*3 => 7;  1-2*3 => -5;
+# Доп: - Добавьте возможность использования скобок, меняющих приоритет операций.
+# Пример:  1+2*3 => 7;   (1+2)*3 => 9;
+
+# sent = [i for i in input('Input exp: ').split()]
+# print(sent)
+# components = [int(i) if i.isdigit() else i for i in sent]
+# print(components)
+# result = 0
+# while '*' in components:
+#     i = components.index('*')
+#     result = components[i - 1] * components[i + 1]
+#     components = components[:i - 1] + [result] + components[i + 2:]
+# while '/' in components:
+#     i = components.index('/')
+#     result = components[i - 1] / components[i + 1]
+#     components = components[:i - 1] + [result] + components[i + 2:]
+# while '+' in components:
+#     i = components.index('+')
+#     result = components[i - 1] + components[i + 1]
+#     components = components[:i - 1] + [result] + components[i + 2:]
+# while '-' in components:
+#     i = components.index('-')
+#     result = components[i - 1] - components[i + 1]
+#     components = components[:i - 1] + [result] + components[i + 2:]
+# print(components)
+
+# ---------------------------------------------------------------------------------------------------
+
+# Зад 2. Дана последовательность чисел. Получить список уникальных элементов заданной последовательности.
+#  Без использования Count()
+# Пример:  [1, 2, 3, 5, 1, 5, 3, 10] => [2, 10]
+
+# 1)
+
+# from random import randrange
+
+# quantity = 10
+# s = [randrange(7) for i in range(quantity)]
+# print(s)
+# p = []
+# for i in s:
+#     b = 0
+#     for k in s:
+#         if i == k:
+#             b += 1
+#     if b == 1:
+#         p.append(i)
+# print(*p)
+
+# 2)
+
+# def find_unique(data):
+#     res = []
+#     res_new = []
+#     for el in data:
+#         if el not in res and el not in res_new:
+#             res.append(el)
+#             res_new.append(el)
+#         elif el in res:
+#             res.remove(el)
+#     print(res_new)
+#     return sorted(res)
+
+# secuence = [1, 1, 1,  2, 2, 3, 10]
+
+# print('исходная последовательность: ', secuence)
+# print('Отсортированный список уникальных эл-тов ', find_unique(secuence))
+
+# ====================================================================================================
+
+
+
+
+
+
+
+
 
 
 
