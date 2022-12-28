@@ -10,7 +10,6 @@ dispatcher = updater.dispatcher
 A = 0
 B = 1
 
-
 def start(update, context):
     context.bot.send_message(update.effective_chat.id, "Привет. Как у вас дела?")
     return A
