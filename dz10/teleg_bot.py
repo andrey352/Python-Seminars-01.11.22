@@ -1,6 +1,8 @@
 # Создать калькулятор для работы с рациональными, организовать меню, добавив в неё
 #  систему логирования(Содержит: id.Пользователь, ввод, результат)
 
+# заметка: работает только с однозначными цифрами, если будет 33+22 то не работает(
+
 from telegram import Bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler
 

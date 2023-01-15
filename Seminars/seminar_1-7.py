@@ -209,6 +209,35 @@
 #     s.remove(n)                                  # удаляет первое вхождение
 #     print(s.index(n) + 1)
 
+#  3) вариант из статьи https://dev-gang.ru/article/python-proverit-indeks-elementa-v-spiske-wfrrk2fkmz/
+
+# s = ['qwe', 'asd', 'zxc', 'qwe']
+# n = 'qwe'
+# count = 0
+# for i in s:
+#     if i == n:
+#         count += 1
+#         print if count == 2
+
+# s = ['qwe', 'asd', 'zxc', 'qwe']
+# st = 'qwe'
+# last = -1
+# res = []
+# found = True
+
+# while found:
+#     try:
+#         for i in s:
+#             if i == st:
+#                 last = s.index(i, last + 1)
+#                 res.append(last)
+#     except:
+#         found = False
+# if len(res) == 0:
+#     print('not found')
+# else:
+#     print('list of index: ' + str(res))
+
 # -------------------------------------------------------------------------------------------------------
 
 # Зад 3. Реализуйте алгоритм задания случайных чисел без использования встроенного генератора
